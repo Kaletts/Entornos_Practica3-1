@@ -30,7 +30,8 @@
         {
             button1 = new Button();
             txtTelegrama = new TextBox();
-            cbUrgente = new CheckBox();
+            rbUrgente = new RadioButton();
+            rbOrdinario = new RadioButton();
             txtPrecio = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -54,22 +55,32 @@
             txtTelegrama.Size = new Size(271, 68);
             txtTelegrama.TabIndex = 1;
             // 
-            // cbUrgente
+            // rbUrgente
             // 
-            cbUrgente.AutoSize = true;
-            cbUrgente.Location = new Point(53, 113);
-            cbUrgente.Name = "cbUrgente";
-            cbUrgente.Size = new Size(73, 19);
-            cbUrgente.TabIndex = 2;
-            cbUrgente.Text = "Urgente?";
-            cbUrgente.UseVisualStyleBackColor = true;
+            rbUrgente.AutoSize = true;
+            rbUrgente.Location = new Point(53, 113);
+            rbUrgente.Name = "rbUrgente";
+            rbUrgente.Size = new Size(73, 19);
+            rbUrgente.TabIndex = 2;
+            rbUrgente.Text = "Urgente";
+            rbUrgente.UseVisualStyleBackColor = true;
+            // 
+            // rbOrdinario
+            // 
+            rbOrdinario.AutoSize = true;
+            rbOrdinario.Location = new Point(53, 138);
+            rbOrdinario.Name = "rbOrdinario";
+            rbOrdinario.Size = new Size(73, 19);
+            rbOrdinario.TabIndex = 3;
+            rbOrdinario.Text = "Ordinario";
+            rbOrdinario.UseVisualStyleBackColor = true;
             // 
             // txtPrecio
             // 
             txtPrecio.Location = new Point(79, 149);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(109, 23);
-            txtPrecio.TabIndex = 3;
+            txtPrecio.TabIndex = 4;
             // 
             // label1
             // 
@@ -77,7 +88,7 @@
             label1.Location = new Point(33, 152);
             label1.Name = "label1";
             label1.Size = new Size(40, 15);
-            label1.TabIndex = 4;
+            label1.TabIndex = 5;
             label1.Text = "Coste:";
             // 
             // label2
@@ -86,7 +97,7 @@
             label2.Location = new Point(33, 21);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
-            label2.TabIndex = 5;
+            label2.TabIndex = 6;
             label2.Text = "Texto:";
             // 
             // Form1
@@ -97,7 +108,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtPrecio);
-            Controls.Add(cbUrgente);
+            Controls.Add(rbOrdinario);
+            Controls.Add(rbUrgente);
             Controls.Add(txtTelegrama);
             Controls.Add(button1);
             Name = "Form1";
@@ -110,7 +122,8 @@
 
         private Button button1;
         private TextBox txtTelegrama;
-        private CheckBox cbUrgente;
+        private RadioButton rbUrgente;
+        private RadioButton rbOrdinario;
         private TextBox txtPrecio;
         private Label label1;
         private Label label2;
